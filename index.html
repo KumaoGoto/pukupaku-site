@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ぷくぱく / PukuPaku — サポート・Support</title>
+<meta name="description" content="魚にエサをあげて膨らませ、合体で育てるパズル「ぷくぱく」のサポートページ。Support page for PukuPaku, the feed-puff-merge fish puzzle.">
+<style>
+  /* 色はアプリと同じ（lib/render/palette.dart）。水色の地に藍の文字、ボタンは橙。 */
+  :root{--bg:#DFF1F7;--bg2:#C6E3EE;--card:#FFFFFF;--ink:#173A52;--sea:#0E3B5E;--dim:#5B7488;
+        --line:#B9D6E3;--accent:#F27D52;--gold:#F2C14E}
+  *{box-sizing:border-box}
+  body{margin:0;padding:0;background:linear-gradient(var(--bg),var(--bg2));color:var(--ink);
+       font-family:"Hiragino Sans","ヒラギノ角ゴシック","Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,sans-serif;
+       line-height:1.9;-webkit-text-size-adjust:100%;min-height:100vh}
+  .wrap{max-width:34rem;margin:0 auto;padding:2rem 1.25rem 4rem}
+  nav.lang{text-align:center;font-size:.9rem;margin-bottom:1.5rem}
+  nav.lang a{color:var(--ink);font-weight:700;text-decoration:none;padding:.3rem .8rem;border:2px solid var(--line);border-radius:999px;background:var(--card)}
+  nav.lang a+a{margin-left:.5rem}
+  header{text-align:center;margin-bottom:2rem}
+  .icon{font-size:3.5rem;line-height:1}
+  h1{font-size:1.75rem;margin:.5rem 0 .25rem;letter-spacing:.06em}
+  .lead{color:var(--sea);font-size:.95rem;margin:0;font-weight:700}
+  h2{font-size:1.05rem;margin:2.25rem 0 .5rem;padding-bottom:.35rem;border-bottom:2px solid var(--line)}
+  p,li{font-size:.95rem}
+  ul{padding-left:1.2rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0}
+  .q{font-weight:700;color:var(--sea);margin:0 0 .35rem;font-size:.97rem}
+  .a{margin:0}
+  a{color:var(--sea)}
+  a.button{display:block;text-align:center;text-decoration:none;font-weight:700;background:var(--accent);color:#fff;
+           border-radius:1rem;padding:.85rem 1rem;margin:1.25rem 0;border-bottom:4px solid #C65A34}
+  section.en{margin-top:4rem;padding-top:2rem;border-top:3px solid var(--line)}
+  footer{margin-top:3rem;text-align:center;color:var(--dim);font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="lang"><a href="#ja">日本語</a><a href="#en">English</a></nav>
+
+<section id="ja">
+<header>
+  <div class="icon">🐡</div>
+  <h1>ぷくぱく</h1>
+  <p class="lead">エサをあげて膨らませ、合体で育てる魚パズル</p>
+</header>
+
+<p>
+  水槽の魚をタップするとエサを食べて、ぷくっと膨らみます。膨らんだ魚に同じ魚が触れると合体して、ひとつ大きな魚に。
+  ふぐからクジラまで10種。目標は、1ゲームでクジラを何匹つくれるか。
+</p>
+
+<!-- ストアに並んだら、下の STORE-LINK のコメント記号を外す。並ぶ前に外すと 404 を配ることになる。 -->
+<!-- STORE-LINK
+<a class="button" href="https://apps.apple.com/jp/app/id0000000000?pt=129314143&amp;ct=site&amp;mt=8">App Store で見る</a>
+STORE-LINK -->
+
+<h2>よくある質問</h2>
+
+<div class="card">
+  <p class="q">膨らんだ魚をもう一度タップしても何も起きません。</p>
+  <p class="a">膨らむのは1回だけです。「もうぱんぱん」と出ている魚には、同じ種類の魚をくっつけてください。合体すると膨らんでいない状態で生まれ直します。</p>
+</div>
+
+<div class="card">
+  <p class="q">ウニが邪魔です。</p>
+  <p class="a">12回タップするごとに流れてきます。タップすると爆発して、まわりの魚を吹き飛ばします。ウニ同士がぶつかると大爆発。狭くなった水槽を動かす手段としても使えます。</p>
+</div>
+
+<div class="card">
+  <p class="q">クジラはどこにいますか。</p>
+  <p class="a">ジンベエ同士が合体した瞬間だけ現れて、水槽のふぐをぜんぶ飲み込んで海へ帰ります。水槽には残りません。結果画面の「クジラN匹」がその数です。</p>
+</div>
+
+<div class="card">
+  <p class="q">途中でアプリを閉じたら、水槽はどうなりますか。</p>
+  <p class="a">遊んでいる途中の水槽は自動で保存されます。次に開いたとき「つづきから遊ぶ？」が出るので、「つづきから」を選んでください。「さいしょから」を選ぶと消えます。</p>
+</div>
+
+<div class="card">
+  <p class="q">ランキングに参加すると何が送られますか。</p>
+  <p class="a">「今日」「全期間」のランキングに参加するときに決めた名前と、自己ベストの点数・クジラの数、端末が作った乱数のIDだけです。名前を決めるまでは何も送りません。本名は使わないでください。「今日」は日本時間の0時で切り替わります。</p>
+</div>
+
+<div class="card">
+  <p class="q">名前を変えたい／記録を消したい。</p>
+  <p class="a">名前はランキングの画面の「名前を変える」から変えられます。オンラインの記録の削除は、下記の連絡先に名前とユーザーIDを添えてお知らせください。</p>
+</div>
+
+<div class="card">
+  <p class="q">音が鳴りません。</p>
+  <p class="a">本体の消音スイッチを尊重する設定にしてあります。音楽やポッドキャストを聴きながら遊べるよう、他のアプリの再生も止めません。設定の「音」からも切り替えられます。</p>
+</div>
+
+<div class="card">
+  <p class="q">広告を消したのに、別の端末では出ます。</p>
+  <p class="a">その端末の設定（タイトル右上の歯車）で「購入を復元」をお試しください。購入したときと同じ Apple ID でサインインしている必要があります。</p>
+</div>
+
+<div class="card">
+  <p class="q">記録が消えました。</p>
+  <p class="a">この端末の記録（上位10件）と途中の水槽は端末の中だけに保存しています。アプリを削除すると消え、機種変更でも引き継げません。オンラインランキングの自己ベストは、同じ名前で参加し直しても別の記録になります。</p>
+</div>
+
+<h2>お問い合わせ</h2>
+<p>不具合のご報告、ご要望は、こちらまでお願いします。不具合の場合は、端末の機種と iOS のバージョンを添えていただけると助かります。</p>
+<p><a href="mailto:support.kumaogoto@gmail.com">support.kumaogoto@gmail.com</a></p>
+
+<h2>プライバシー</h2>
+<p><a href="privacy.html#ja">プライバシーポリシー</a></p>
+</section>
+
+<section id="en" class="en" lang="en">
+<header>
+  <div class="icon">🐡</div>
+  <h1>PukuPaku</h1>
+  <p class="lead">Feed, puff, merge into a whale</p>
+</header>
+
+<p>
+  Tap a fish in the tank and it eats, then puffs up. When a puffed fish touches another of the same kind, they merge into a bigger one.
+  Ten species from puffer to whale. The goal: how many whales can you make in one game?
+</p>
+
+<h2>FAQ</h2>
+
+<div class="card">
+  <p class="q">Tapping a puffed fish again does nothing.</p>
+  <p class="a">A fish puffs only once. When it says "So full!", bring another fish of the same kind to it. After a merge the new fish starts un-puffed.</p>
+</div>
+
+<div class="card">
+  <p class="q">The urchins are in the way.</p>
+  <p class="a">One comes down the pipe every 12 taps. Tap it and it bursts, blasting the fish around it; two urchins touching set off a double blast. Use them to shake up a crowded tank.</p>
+</div>
+
+<div class="card">
+  <p class="q">Where is the whale?</p>
+  <p class="a">It appears only when two whale sharks merge, gulps every puffer in the tank and swims away. It never stays in the tank. The result screen counts your whales.</p>
+</div>
+
+<div class="card">
+  <p class="q">I closed the app mid-game.</p>
+  <p class="a">A game in progress is saved automatically. Next time you open the app, choose "Continue". "New game" discards it.</p>
+</div>
+
+<div class="card">
+  <p class="q">What is sent when I join the ranking?</p>
+  <p class="a">Only the name you choose for the "Today" and "All time" boards, your best score and whale count, and a random ID made by the device. Nothing is sent until you choose a name. Please don't use your real name. "Today" resets at midnight Japan time.</p>
+</div>
+
+<div class="card">
+  <p class="q">I want to change my name or delete my record.</p>
+  <p class="a">Change the name from "Change name" on the ranking screen. To delete your online record, e-mail us with your name and user ID.</p>
+</div>
+
+<div class="card">
+  <p class="q">No sound.</p>
+  <p class="a">The app respects the silent switch and never stops music or podcasts from other apps. You can also toggle sound in Settings.</p>
+</div>
+
+<div class="card">
+  <p class="q">I removed ads, but they show on another device.</p>
+  <p class="a">Open Settings (gear on the title screen) on that device and tap "Restore purchase". You need to be signed in with the same Apple ID you bought with.</p>
+</div>
+
+<div class="card">
+  <p class="q">In the EU: I want to change my ad consent.</p>
+  <p class="a">Open Settings and tap "Ad privacy settings" to see the consent form again.</p>
+</div>
+
+<h2>Contact</h2>
+<p>Bug reports and requests: <a href="mailto:support.kumaogoto@gmail.com">support.kumaogoto@gmail.com</a>. For bugs, please include your device model and iOS version.</p>
+
+<h2>Privacy</h2>
+<p><a href="privacy.html#en">Privacy Policy</a></p>
+</section>
+
+<footer>© 2026 Mitsuaki Goto</footer>
+
+</div>
+</body>
+</html>
